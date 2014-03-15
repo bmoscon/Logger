@@ -128,6 +128,8 @@ std::string Logger::get_time()
 inline const char* Logger::level_str(const logger_level& level)
 {
   switch (level) {
+  case VERBOSE:
+    return ("VERBOSE");
   case DEBUG:
     return ("DEBUG");
   case INFO:
