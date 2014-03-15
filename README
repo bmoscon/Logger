@@ -1,4 +1,4 @@
-Simple, Leightweight Logging Library written in C++
+Simple, Lightweight Logging Library written in C++
 
 Usage:
 
@@ -32,3 +32,6 @@ example.set_level(VERBOSE);
 
 
 The level defaults to INFO is one is never set.
+
+
+Note: This library requires C++11 compiler support
