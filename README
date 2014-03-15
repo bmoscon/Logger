@@ -8,7 +8,7 @@ Specify a filename when constructing:
 Logger example("FILENAME");
 
 
-Log lines will be written to this file. Use the << operators to 
+Log lines will be written to this file. Use the << operator to 
 direct messages to the log stream and indicate the log level. 
 If the log level is omitted, it defaults to verbose:
 
