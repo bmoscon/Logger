@@ -129,17 +129,17 @@ inline const char* Logger::level_str(const logger_level& level)
 {
   switch (level) {
   case VERBOSE:
-    return ("VERBOSE");
+    return ("VERB");
   case DEBUG:
-    return ("DEBUG");
+    return ("DEBG");
   case INFO:
     return ("INFO");
   case WARNING:
-    return ("WARNING");
+    return ("WARN");
   case ERROR:
-    return  ("ERROR");
+    return ("ERR ");
   case CRITICAL:
-    return  ("CRITICAL");
+    return ("CRIT");
   default:
     assert(false);
   } 
