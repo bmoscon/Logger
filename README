@@ -3,13 +3,14 @@ Simple, Lightweight Logging Library written in C++
 Usage:
 
 
-Specify a filename when constucting:
+Specify a filename when constructing:
 
 Logger example("FILENAME");
 
 
-Log lines will be written to this file. Use the << operators to direct messages to the log 
-stream and indicate the log level. If the log level is omitted, it defaults to verbose:
+Log lines will be written to this file. Use the << operators to 
+direct messages to the log stream and indicate the log level. 
+If the log level is omitted, it defaults to verbose:
 
 example << ERROR << "Out of Memory!" << std::endl;
 
@@ -22,8 +23,9 @@ Sat Mar 15 08:06:58 2014 -- [ERROR] -- Out of Memory!
 If you dont care for the formatting, change the code :)
 
 
-You must end the line with an endl. This tells the logger to write the line and
-prepend the timestamp to the line as well. 
+You must end the line with an endl. This tells the logger 
+to write the line and prepend the timestamp to the line 
+as well. 
 
 
 You can change the logging level like so:
