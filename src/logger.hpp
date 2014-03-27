@@ -69,7 +69,7 @@ typedef enum {
 class Logger : public std::ostringstream {
 public:
   Logger(const char *f);
-  Logger(std::string f);
+  Logger(const std::string& f);
   Logger (const Logger &) = delete;
   Logger &operator= (const Logger &) = delete;
   ~Logger();
@@ -80,7 +80,7 @@ public:
   template <typename T>
   Logger& operator<<(const T& t)
   {
-    (*(std::ostringstream *)this) << t;
+    *static_cast<std::ostringstream *>(this) << t;
     return (*this);
   }
   
@@ -89,7 +89,7 @@ public:
   Logger& operator<<(LoggerManip m);
   
 private:
-  std::string get_time();
+  std::string get_time() const;
   inline const char* level_str(const logger_level& level);
   
   std::ofstream  _file;

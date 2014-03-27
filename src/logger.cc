@@ -1,4 +1,3 @@
-
 /*
  * logger.cc
  *
@@ -58,10 +57,10 @@ Logger::Logger(const char *f) : _file(f, std::ios::out | std::ios::app),
 }
 
 
-Logger::Logger(std::string f) : _file(f.c_str(), std::ios::out | std::ios::app), 
-				_log(_file),
-				_level(INFO),
-				_line_level(VERBOSE)
+Logger::Logger(const std::string& f) : _file(f.c_str(), std::ios::out | std::ios::app), 
+				       _log(_file),
+				       _level(INFO),
+				       _line_level(VERBOSE)
 {
   assert(_file.is_open());
 }
@@ -106,7 +105,7 @@ Logger& Logger::operator<<(LoggerManip m)
 }
 
 
-std::string Logger::get_time()
+std::string Logger::get_time() const
 {
   struct tm *timeinfo;
   time_t rawtime;
@@ -129,17 +128,17 @@ inline const char* Logger::level_str(const logger_level& level)
 {
   switch (level) {
   case VERBOSE:
-    return ("VERB");
+    return ("VRB");
   case DEBUG:
-    return ("DEBG");
+    return ("DBG");
   case INFO:
-    return ("INFO");
+    return ("INF");
   case WARNING:
-    return ("WARN");
+    return ("WRN");
   case ERROR:
-    return ("ERR ");
+    return ("ERR");
   case CRITICAL:
-    return ("CRIT");
+    return ("CRT");
   default:
     assert(false);
   } 
