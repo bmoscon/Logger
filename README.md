@@ -1,5 +1,7 @@
 ##Simple, Lightweight Logging
 
+[![License](https://img.shields.io/badge/license-XFree86-blue.svg)](LICENSE)
+
 Usage:
 
 
