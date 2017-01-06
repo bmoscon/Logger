@@ -1,4 +1,4 @@
-##Simple, Lightweight Logging Library written in C++
+##Simple, Lightweight Logging
 
 Usage:
 
