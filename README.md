@@ -29,7 +29,7 @@ Sat Mar 15 08:06:58 2014 -- [ERROR] -- Out of Memory!
 If you dont care for the formatting, change the code :)
 
 
-You must end the line with an endl. This tells the logger 
+You must end the line with an ```endl```. This tells the logger 
 to write the line and prepend the timestamp to the line 
 as well. 
 
