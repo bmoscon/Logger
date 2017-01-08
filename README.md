@@ -40,7 +40,7 @@ You can change the logging level like so:
 example.set_level(VERBOSE);
 ```
 
-The level defaults to VERBOSE is one is never set, and this can be changed via ```set_default_line_level```
+The level defaults to ```VERBOSE``` is one is never set, and this can be changed via ```set_default_line_level```
 
 
 Note: This library requires C++11 compiler support
